@@ -13,9 +13,9 @@ class _UpcomingpageState extends State<Upcomingpage> {
   @override
   Widget build(BuildContext context) {
     return   Scaffold(
-      body: Column(
+      body: Column(mainAxisAlignment: MainAxisAlignment.spaceAround,
         children: [
-          SizedBox(height: 20,),
+          
           Upcmingtile()
 
         ],

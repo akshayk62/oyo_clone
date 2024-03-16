@@ -9,7 +9,7 @@ class Upcmingtile extends StatelessWidget {
       child: ListView(scrollDirection: Axis.vertical,shrinkWrap: true,
         children: [ListTile(
           title: const Column(
-            children: [Text('Chennai'), Text('28 Mar - 29 Mar ')],
+            children: [Text('Chennai',style: TextStyle(fontWeight: FontWeight.w900),), Text('28 Mar - 29 Mar '),Text('OYO Hotel near Egmore',style: TextStyle(color: Color.fromARGB(255, 203, 198, 198)),)],
           ),
           leading: Container(
             child: Image.asset('assets/images/upcoming3.jpeg.jpeg'),
@@ -19,7 +19,7 @@ class Upcmingtile extends StatelessWidget {
           ),
         ),SizedBox(height: 30,),
         ListTile( title: const Column(
-            children: [Text('Banglore'), Text('30 Mar - 31 Mar ')],
+            children: [Text('Banglore',style: TextStyle(fontWeight: FontWeight.w900)), Text('30 Mar - 31 Mar ',style: TextStyle(fontWeight: FontWeight.w300),)],
           ),
           leading: Container(
             child: Image.asset('assets/images/upcoming2.jpeg'),
@@ -29,7 +29,7 @@ class Upcmingtile extends StatelessWidget {
           ),),
           SizedBox(height: 30,),
           ListTile(title: const Column(
-            children: [Text('Pune'), Text('31 Mar - 1 Apr ')],
+            children: [Text('Pune',style: TextStyle(fontWeight: FontWeight.w900)), Text('31 Mar - 1 Apr ')],
           ),
           leading: Container(
             height: 120,
