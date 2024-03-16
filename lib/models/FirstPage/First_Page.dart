@@ -19,7 +19,7 @@ class _FirstPageState extends State<FirstPage> {
       appBar: AppBar( leading: Builder(builder: (context){
         return IconButton(onPressed: (){
           return Scaffold.of(context).openDrawer();
-        }, icon: Icon(Icons.more_vert_outlined ,color: Colors.red,));
+        }, icon: CircleAvatar( backgroundColor: Colors.red, child: Text('A'),),);
 
       }),
         backgroundColor: Colors.white,

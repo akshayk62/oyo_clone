@@ -30,7 +30,7 @@ class _BottomnavState extends State<Bottomnav> {
   @override
   Widget build(BuildContext context) {
     return  Scaffold(body: screenlist[_selectedindex],
-      bottomNavigationBar: BottomNavigationBar( selectedLabelStyle: TextStyle(color: Colors.black), selectedIconTheme: IconThemeData(color: Colors.black),selectedItemColor: Colors.black,  type: BottomNavigationBarType.fixed, onTap: (value) {
+      bottomNavigationBar: BottomNavigationBar(  selectedLabelStyle: TextStyle(color: Colors.black), selectedIconTheme: IconThemeData(color: Colors.black),selectedItemColor: Colors.black,  type: BottomNavigationBarType.fixed, onTap: (value) {
         setState(() {
           _selectedindex = value;
         });
