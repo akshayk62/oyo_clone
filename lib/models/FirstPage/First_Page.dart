@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-
+import 'package:oyo_clone/global_widgets/drawertile_widget/drawertile_widget.dart';
 import 'package:oyo_clone/models/DrawerPage/DrawerPage.dart';
 import 'package:oyo_clone/models/bottom_nav/bottom_nav.dart';
 
@@ -19,7 +19,7 @@ class _FirstPageState extends State<FirstPage> {
       appBar: AppBar( leading: Builder(builder: (context){
         return IconButton(onPressed: (){
           return Scaffold.of(context).openDrawer();
-        }, icon: CircleAvatar( backgroundColor: Colors.red, child: Text('A'),),);
+        }, icon:CircleAvatar(child: Text('A',style: TextStyle(color: Colors.red),),) );
 
       }),
         backgroundColor: Colors.white,

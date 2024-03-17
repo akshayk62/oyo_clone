@@ -17,10 +17,11 @@ class _BottomnavState extends State<Bottomnav> {
 
   List <Widget> screenlist = [
     
-    Bookingpage(),
+    
     Homepage(),
-    Searchpage(),
     Walletpage(),
+    Searchpage(),
+    Bookingpage(),
     Helppage()
 
   ];
