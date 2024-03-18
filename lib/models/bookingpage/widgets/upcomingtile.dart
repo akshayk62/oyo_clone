@@ -11,7 +11,7 @@ class Upcmingtile extends StatelessWidget {
         child: ListView(scrollDirection: Axis.vertical,shrinkWrap: true,
           children: [ListTile(shape: RoundedRectangleBorder( 
           side: BorderSide(width: 2),
-          borderRadius: BorderRadius.circular(10),
+          borderRadius: BorderRadius.circular(20),
         ),
             title: const Column(
               children: [Text('Chennai',style: TextStyle(fontWeight: FontWeight.w900),), Text('28 Mar - 29 Mar '),Text('OYO Hotel near Egmore',style: TextStyle(color: Colors.grey),)],
@@ -25,7 +25,7 @@ class Upcmingtile extends StatelessWidget {
           ),SizedBox(height: 30,),
           ListTile(shape: RoundedRectangleBorder( 
     side: BorderSide(width: 2),
-    borderRadius: BorderRadius.circular(10),
+    borderRadius: BorderRadius.circular(20),
   ),
              title: const Column(
               children: [Text('Banglore',style: TextStyle(fontWeight: FontWeight.w900)), Text('30 Mar - 31 Mar ',style: TextStyle(fontWeight: FontWeight.w300),),Text('Super OYO TownHouse',style: TextStyle(color: Colors.grey),)],
@@ -39,7 +39,7 @@ class Upcmingtile extends StatelessWidget {
             SizedBox(height: 30,),
             ListTile( shape: RoundedRectangleBorder( 
     side: BorderSide(width: 2),
-    borderRadius: BorderRadius.circular(10),
+    borderRadius: BorderRadius.circular(20),
   ),
               title: const Column(
               children: [Text('Pune',style: TextStyle(fontWeight: FontWeight.w900)), Text('31 Mar - 1 Apr ',style: TextStyle(fontWeight:FontWeight.w300 ),),Text('OYO Deluxe Airra In',style: TextStyle(color: Colors.grey),)],
@@ -47,7 +47,7 @@ class Upcmingtile extends StatelessWidget {
             leading: Container(
               height: 120,
               width: 100,
-              decoration: BoxDecoration(borderRadius: BorderRadius.circular(10)),
+              decoration: BoxDecoration(borderRadius: BorderRadius.circular(20)),
               child: Image.asset("assets/images/upcoming1.png"),
             )
       

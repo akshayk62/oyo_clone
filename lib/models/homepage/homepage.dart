@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:oyo_clone/models/DrawerPage/DrawerPage.dart';
 import 'package:oyo_clone/models/bookingpage/widgets/upcomingtile.dart';
 import 'package:oyo_clone/models/homepage/widgets/circularrow.dart';
+import 'package:oyo_clone/models/homepage/widgets/imagecolumnwidget.dart';
+import 'package:oyo_clone/models/homepage/widgets/imagerowwidget.dart';
 
 
 
@@ -42,7 +44,18 @@ class _HomepageState extends State<Homepage> {
           Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [  Text('Total Amount',style: TextStyle(fontSize: 20),),Text('₹948',style: TextStyle(fontWeight: FontWeight.bold),)],),
           SizedBox(height: 20,),
           SizedBox( width: double.infinity, child: ElevatedButton(style: ElevatedButton.styleFrom(backgroundColor: const Color.fromARGB(255, 252, 19, 2)), onPressed: (){}, child: Text(' Pay ₹948 now'))),
-          SizedBox(height: 20,)
+          SizedBox(height: 20,),
+          Row(mainAxisAlignment: MainAxisAlignment.start,
+            children: [
+              Text('Handpicked for you',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 30),),
+            ],
+          ),
+          SizedBox(height: 10,),
+          const Imagerowwidget(),
+          SizedBox(height: 10,),
+          Row( mainAxisAlignment: MainAxisAlignment.start, children: [Text('OYOs found',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 30),)],),
+          SizedBox(height: 10,),
+          Imagecolumnwidget()
 
           ],
         ),

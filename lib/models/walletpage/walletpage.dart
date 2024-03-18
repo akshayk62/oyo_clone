@@ -1,11 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:oyo_clone/models/walletpage/invitepage.dart';
+import 'package:oyo_clone/models/walletpage/rewardpage.dart';
 
 class Walletpage extends StatelessWidget {
   const Walletpage({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return DefaultTabController(length: 3,
+    return DefaultTabController(length: 2,
       child: Scaffold(
         appBar: AppBar(
           backgroundColor: Colors.white,
@@ -24,10 +26,11 @@ class Walletpage extends StatelessWidget {
           )],bottom:const TabBar( indicatorColor: Colors.black, tabs: [
             Tab(child: Text('Invite',style: TextStyle(color: Colors.black),),),
             Tab(child: Text('Rewards',style: TextStyle(color: Colors.black),),),
-            Tab(child: Text('FAQ',style: TextStyle(color: Colors.black),),)
             
-          ]) ,)
-          
+            
+          ]) ,),
+          body: TabBar(tabs: [InvitePage(),
+          RewardPage()]),
       ),
     );
   }

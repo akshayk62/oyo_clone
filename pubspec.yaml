@@ -64,6 +64,7 @@ flutter:
     - assets/images/upcoming2.jpeg
     - assets/images/upcoming1.png
     - assets/images/upcoming3.jpeg.jpeg
+    - assets/images/oyo4.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware

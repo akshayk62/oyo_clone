@@ -19,9 +19,9 @@ class _BottomnavState extends State<Bottomnav> {
     
     
     Homepage(),
-    Walletpage(),
-    Searchpage(),
     Bookingpage(),
+    Searchpage(),
+    Walletpage(),
     Helppage()
 
   ];
